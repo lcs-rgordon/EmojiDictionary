@@ -39,26 +39,43 @@ class EmojiTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
+    // How many sections are in the table view
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
+    // How many rows to show in that section
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        // On the first section, return the count of emojis
+        // For any other section, return 0
+        if section == 0 {
+            return emojis.count
+        } else {
+            return 0
+        }
+        
     }
 
-    /*
+    // To get a cell for each row
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        
+        // Ask the table view to dequeue a cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "EmojiCell", for: indexPath)
 
-        // Configure the cell...
+        // Get an emoji to be displayed
+        let emoji = emojis[indexPath.row]
+        
+        // Configure the cell
+        // The ? allows the program to contiue only when the property is non-nil
+        // Like a shorthand for a guard-let or if-let statement
+        cell.textLabel?.text = "\(emoji.symbol) - \(emoji.name)"
+        cell.detailTextLabel?.text = emoji.description
 
+        // Now return the configured cell
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.
