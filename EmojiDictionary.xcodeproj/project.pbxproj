@@ -14,6 +14,7 @@
 		0EAC5DA1237C937900E92727 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EAC5D9F237C937900E92727 /* LaunchScreen.storyboard */; };
 		0EAC5DA9237C946A00E92727 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAC5DA8237C946A00E92727 /* Emoji.swift */; };
 		0EAC5DAB237C96BB00E92727 /* EmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAC5DAA237C96BB00E92727 /* EmojiTableViewController.swift */; };
+		0EAC5DAD237CB6FD00E92727 /* EmojiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAC5DAC237CB6FD00E92727 /* EmojiDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		0EAC5DA2237C937900E92727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EAC5DA8237C946A00E92727 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		0EAC5DAA237C96BB00E92727 /* EmojiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewController.swift; sourceTree = "<group>"; };
+		0EAC5DAC237CB6FD00E92727 /* EmojiDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				0EAC5DA2237C937900E92727 /* Info.plist */,
 				0EAC5DA8237C946A00E92727 /* Emoji.swift */,
 				0EAC5DAA237C96BB00E92727 /* EmojiTableViewController.swift */,
+				0EAC5DAC237CB6FD00E92727 /* EmojiDetailViewController.swift */,
 			);
 			path = EmojiDictionary;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EAC5DAB237C96BB00E92727 /* EmojiTableViewController.swift in Sources */,
+				0EAC5DAD237CB6FD00E92727 /* EmojiDetailViewController.swift in Sources */,
 				0EAC5DA9237C946A00E92727 /* Emoji.swift in Sources */,
 				0EAC5D95237C937700E92727 /* AppDelegate.swift in Sources */,
 				0EAC5D97237C937700E92727 /* SceneDelegate.swift in Sources */,

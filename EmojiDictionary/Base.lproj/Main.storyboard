@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -38,6 +39,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="VuV-kc-awk" kind="show" id="hbE-mH-1bS"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -49,7 +53,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VXD-4b-rNb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="836" y="145"/>
+            <point key="canvasLocation" x="522" y="139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Pby-1Q-Mcc">
@@ -66,6 +70,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BgS-H5-R8b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-287" y="139"/>
+        </scene>
+        <!--Emoji Detail View Controller-->
+        <scene sceneID="PBB-Mq-8gD">
+            <objects>
+                <viewController id="VuV-kc-awk" customClass="EmojiDetailViewController" customModule="EmojiDictionary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LCU-t8-Sah">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="EyU-6r-OCF"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qHh-vN-MRr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MFm-wJ-ZTC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1283" y="139"/>
         </scene>
     </scenes>
 </document>
