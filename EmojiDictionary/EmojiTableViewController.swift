@@ -125,10 +125,18 @@ class EmojiTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-        segue.destination.navigationItem.title = "Bananas"
-
+        // Get a reference to the destination view controller using segue.destination
+        guard let detailViewController = segue.destination as? EmojiDetailViewController else {
+            return
+        }
+        
+        // Get the currently selected row of the table view
+        guard let index = tableView.indexPathForSelectedRow?.row else {
+            return
+        }
+        
+        // Now set the emoji to be displayed
+        detailViewController.emojiToDisplay = emojis[index]
     }
     
     

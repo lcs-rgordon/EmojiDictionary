@@ -11,16 +11,21 @@ import UIKit
 class EmojiDetailViewController: UIViewController {
 
     // MARK: Properties
-    var emojiToDisplay: Emoji = Emoji()
+    var emojiToDisplay: Emoji?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Set the navigation item title
+        self.navigationItem.title = emojiToDisplay!.name
 
         // Now set up the view to display information about the selected emoji
-        
-        
+        print("Name is: \(emojiToDisplay!.name)")
+        print("Symbol is: \(emojiToDisplay!.symbol)")
+        print("Description is: \(emojiToDisplay!.description)")
+        print("Usage is: \(emojiToDisplay!.usage)")
+
     }
-    
 
     /*
     // MARK: - Navigation

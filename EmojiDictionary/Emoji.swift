@@ -9,8 +9,8 @@
 import Foundation
 
 struct Emoji {
-    var symbol: String = "🎉"
-    var name: String = "Party"
-    var description: String = "A party hat with confetti raining down"
-    var usage: String = "use when something awesome happens"
+    var symbol: String
+    var name: String
+    var description: String
+    var usage: String
 }
