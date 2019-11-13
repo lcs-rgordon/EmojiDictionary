@@ -111,6 +111,15 @@ class EmojiTableViewController: UITableViewController {
         return true
     }
     */
+    
+    // Print the currently selected emoji to the console
+    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        
+        // Get the current emoji
+        // TODO: Understand why the row doesn't seem to be right
+        let emoji = emojis[indexPath.row]
+        print("\(emoji.symbol) \(indexPath.row)")
+    }
 
     /*
     // MARK: - Navigation
@@ -121,5 +130,8 @@ class EmojiTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+
 
 }
