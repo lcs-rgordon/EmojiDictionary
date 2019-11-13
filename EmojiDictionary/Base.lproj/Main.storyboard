@@ -78,10 +78,62 @@
                     <view key="view" contentMode="scaleToFill" id="LCU-t8-Sah">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cwq-6F-oFP">
+                                <rect key="frame" x="8" y="88" width="398" height="774"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎉" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="122" translatesAutoresizingMaskIntoConstraints="NO" id="1av-Gr-plh" userLabel="Symbol">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="168"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="144"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5N-sK-HmK" userLabel="Description label">
+                                        <rect key="frame" x="0.0" y="176" width="398" height="26.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9om-QI-OLV" userLabel="Description detail">
+                                        <rect key="frame" x="0.0" y="210.5" width="398" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usage" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znL-xV-2yz" userLabel="Usage label">
+                                        <rect key="frame" x="0.0" y="239" width="398" height="26.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Lh3-qe-UEv" userLabel="Usage detail">
+                                        <rect key="frame" x="0.0" y="273.5" width="398" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="Wbz-sx-HqW">
+                                        <rect key="frame" x="0.0" y="302" width="398" height="472"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cwq-6F-oFP" firstAttribute="top" secondItem="EyU-6r-OCF" secondAttribute="top" id="S5e-yq-BcA"/>
+                            <constraint firstItem="EyU-6r-OCF" firstAttribute="bottom" secondItem="cwq-6F-oFP" secondAttribute="bottom" id="keJ-7c-kLh"/>
+                            <constraint firstItem="EyU-6r-OCF" firstAttribute="trailing" secondItem="cwq-6F-oFP" secondAttribute="trailing" constant="8" id="rOS-Yu-oK3"/>
+                            <constraint firstItem="cwq-6F-oFP" firstAttribute="leading" secondItem="EyU-6r-OCF" secondAttribute="leading" constant="8" id="xR9-16-vcU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="EyU-6r-OCF"/>
                     </view>
                     <navigationItem key="navigationItem" id="qHh-vN-MRr"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="9om-QI-OLV" id="6Pp-vO-9eT"/>
+                        <outlet property="symbolLabel" destination="1av-Gr-plh" id="bKq-ga-dOD"/>
+                        <outlet property="usageLabel" destination="Lh3-qe-UEv" id="aYy-3v-abS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MFm-wJ-ZTC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
