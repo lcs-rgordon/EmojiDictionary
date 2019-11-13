@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Emoji Dictionary-->
         <scene sceneID="yAW-j1-nhm">
             <objects>
                 <tableViewController id="i0F-Cr-zJW" customClass="EmojiTableViewController" customModule="EmojiDictionary" customModuleProvider="target" sceneMemberID="viewController">
@@ -49,7 +49,7 @@
                             <outlet property="delegate" destination="i0F-Cr-zJW" id="ZSD-7G-QJ7"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="jdI-0s-Zpu"/>
+                    <navigationItem key="navigationItem" title="Emoji Dictionary" id="jdI-0s-Zpu"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VXD-4b-rNb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
