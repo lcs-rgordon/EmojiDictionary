@@ -113,7 +113,7 @@ class EmojiTableViewController: UITableViewController {
     */
     
     // Print the currently selected emoji to the console
-    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         // Get the current emoji
         // TODO: Understand why the row doesn't seem to be right
@@ -125,6 +125,7 @@ class EmojiTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         // Get a reference to the destination view controller using segue.destination
         guard let detailViewController = segue.destination as? EmojiDetailViewController else {
             return
